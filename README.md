@@ -1,2 +1,2 @@
-# base-converter
-Converts binary, octal, hexadecimal and decimal values.
+# Converter
+## Converts binary, octal, hexadecimal and decimal values.
