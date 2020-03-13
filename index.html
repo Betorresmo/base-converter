@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/tableStyle.css">
+    <title>Converter</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <table class="container__table">
+                <thead >
+                    <tr>
+                        <td class="container__thead" colspan="2">Bin / Dec / Hex / Oct Converter</td>
+                    </tr>
+                </thead>
+                <tbody class="container__tbody">
+                    <tr>
+                        <td>
+                            <label for="inputType">Input:</label>
+                            <select class="container__select" name="inputType" id="inputType">
+                                <option value="10">Decimal</option>
+                                <option value="2">Binary</option>
+                                <option value="16">Hexadecimal</option>
+                                <option value="8">Octal</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="outputType">Output:</label>
+                            <select class="container__select" name="outputType" id="outputType">
+                                <option value="10">Decimal</option>
+                                <option value="2">Binary</option>
+                                <option value="16">Hexadecimal</option>
+                                <option value="8">Octal</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="container__lastTd" colspan="2">
+                            <div class="container__bottom">
+                                <input class="container__input" type="text">
+                                <button class="container__button"><?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg class="container__svg" version="1.1" id="Layer_1" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        x="0px" y="0px" viewBox="0 0 512 372.9" style="enable-background:new 0 0 512 372.9;" xml:space="preserve">
+                                    <path d="M431.9,179.4c-14.2,13.3-37.5,0.4-37.5-17.2l0.5-41.5l-370.7,0.1c-13.3,0.1-24.3-5.9-24.3-18.3v-15c0-12.4,10.1-19,23.3-19
+                                        l370.1-0.7V24.2c0-15.6,19.2-31.9,31.5-20.3L504.9,79c9.4,8.8,9.4,23.1,0,31.9L431.9,179.4"/>
+                                    <path d="M80,367.4L7,298.9c-9.4-8.8-9.4-23.1,0-31.9l80.1-75.1c12.3-11.6,31.5,4.7,31.5,20.3v43.6l370.1,0.7
+                                        c13.2,0,23.3,6.6,23.3,19v15c0,12.4-11,18.4-24.3,18.3L117,308.7l0.5,41.5C117.5,367.8,94.2,380.7,80,367.4"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="/converter.js"></script> 
+</body>
+</html>
