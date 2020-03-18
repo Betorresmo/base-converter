@@ -2,7 +2,6 @@ import inputValidation from './validation.js';
 import {convertToDecimal, convertFromDecimal} from './conversion.js';
 
 const convertButton = document.querySelector(".container__button");
-const output = document.querySelector(".container__output");
 
 function newOutputTr (value){
 
@@ -24,7 +23,6 @@ function newOutputTr (value){
         document.querySelector(".container__output").textContent = value;
     }    
 }
-
 convertButton.addEventListener("click", ()=>{
     const inputType = document.querySelector("#inputType").value;
     const outputType = document.querySelector("#outputType").value;

@@ -64,6 +64,10 @@
   color: #5c5c5c;
 }
 
+.container__output:hover {
+  cursor: pointer;
+}
+
 .container__lastTd {
   border-radius: 0 0 1rem 1rem;
 }
@@ -114,6 +118,7 @@
 .container__button:hover {
   background-color: #a05559;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .container__button:active {

@@ -58,6 +58,10 @@ $darkFontColor: #5c5c5c;
         font-weight: 700;
         font-size: 1.5rem;
         color: $darkFontColor;
+
+        &:hover{
+            cursor: pointer;
+    }
     }
     &__lastTd{
         border-radius: 0 0 1rem 1rem;
@@ -92,7 +96,8 @@ $darkFontColor: #5c5c5c;
 
         &:hover{
             background-color: #a05559;
-            font-weight: bold;  
+            font-weight: bold;
+            cursor: pointer;
         }
         &:active{
             transform: scale(0.95); 
