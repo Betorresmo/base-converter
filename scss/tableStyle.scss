@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
 
 $mainColor: #eb4d55;
 $borderColor: #eb8e93;
@@ -53,6 +53,11 @@ $darkFontColor: #5c5c5c;
             color: $darkFontColor;
             cursor: pointer;
         }
+    }
+    &__output{
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: $darkFontColor;
     }
     &__lastTd{
         border-radius: 0 0 1rem 1rem;

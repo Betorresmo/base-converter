@@ -8,9 +8,9 @@ function returnBaseRegExp (base){
         case '2':
             return new RegExp("[01]");
         case '16':
-            return new RegExp("[0-9A-F]");
+            return new RegExp("[0-9A-Fa-f]");
         case '8':
-            return new RegExp("[0-8]");
+            return new RegExp("[0-7]");
     }
 }
 

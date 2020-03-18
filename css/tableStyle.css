@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:400,700&display=swap");
 * {
   font-family: 'Inter', sans-serif;
   font-size: 18px;
@@ -56,6 +56,12 @@
   border-color: #eb4d55;
   color: #5c5c5c;
   cursor: pointer;
+}
+
+.container__output {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #5c5c5c;
 }
 
 .container__lastTd {
