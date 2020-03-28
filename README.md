@@ -3,9 +3,7 @@
 Converts binary, octal, hexadecimal and decimal values.
 
 ### 🖌️ Preview
-<h1 align="center">
 <img src="/converter_screenshot.png" width="500px">
-</h1>
 
 ### 💻 Technologies
 
