@@ -4,6 +4,10 @@
   font-size: 18px;
 }
 
+table {
+  border-spacing: 0;
+}
+
 .container {
   width: 100vw;
 }
@@ -12,7 +16,7 @@
   width: 15rem;
   margin: 2rem auto;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   -webkit-box-shadow: 1px 1px 10px 1px #70707042;
           box-shadow: 1px 1px 10px 1px #70707042;
   -webkit-transition: 200ms -webkit-box-shadow ease-out;
@@ -27,7 +31,9 @@
 }
 
 .container__thead {
-  border-radius: 1rem 1rem 0 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.7rem 0.7rem 0 0;
   background-color: #eb4d55;
   border: 1px #eb4d55;
   color: #fdfcfc;
@@ -45,7 +51,7 @@
   margin-top: 1rem;
   padding: 0.5rem;
   background-color: #fdfcfc;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   border: 2px solid #eb8e93;
   color: #eb8e93;
   -webkit-transition: 120ms all ease-in;
@@ -69,7 +75,7 @@
 }
 
 .container__lastTd {
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 0.7rem 0.7rem;
 }
 
 .container__bottom {
@@ -84,7 +90,7 @@
           flex-grow: 2;
   padding: 0.5rem;
   background-color: #fdfcfc;
-  border-radius: 1rem 0 0 1rem;
+  border-radius: 0.7rem 0 0 0.7rem;
   border: 2px solid #eb8e93;
   border-right: transparent;
   color: #5c5c5c;
@@ -107,7 +113,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 0.7rem 0.7rem 0;
   background-color: #eb4d55;
   border: solid 0px;
   color: #fdfcfc;

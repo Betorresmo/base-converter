@@ -5,106 +5,111 @@ $borderColor: #eb8e93;
 $tbodyColor: #faf4f4;
 $inputColor: #fdfcfc;
 $darkFontColor: #5c5c5c;
+$radius: 0.7rem;
 
-*{
-    font-family: 'Inter', sans-serif;
-    font-size: 18px;
+* {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
 }
+table {
+  border-spacing: 0;
+}
+.container {
+  width: 100vw;
 
-.container{
-    width: 100vw;
-    
-    &__table{
-        width: 15rem;
-        margin: 2rem auto;
-        text-align: center;
-        border-radius: 1rem;
-        box-shadow: 1px 1px 10px 1px#70707042;
-        transition: 200ms box-shadow ease-out;
+  &__table {
+    width: 15rem;
+    margin: 2rem auto;
+    text-align: center;
+    border-radius: $radius;
+    box-shadow: 1px 1px 10px 1px#70707042;
+    transition: 200ms box-shadow ease-out;
 
-        &:hover{
-            box-shadow: 1px 1px 10px 2px#7070707a;
-        }
+    &:hover {
+      box-shadow: 1px 1px 10px 2px#7070707a;
     }
-    &__thead{
-        border-radius:1rem 1rem 0 0;
-        background-color:$mainColor;
-        border:1px $mainColor;
-        color:$inputColor;
-        font-weight: bold;
-        padding: 1rem;
-    }
-    &__tbody td{
-        background-color: $tbodyColor;
-        color: $darkFontColor;
-        padding: 1rem 2rem;
-    }
-    &__select{
-        margin-top: 1rem;
-        padding: 0.5rem;
-        background-color: $inputColor;
-        border-radius: 1rem;
-        border: 2px solid $borderColor;
-        color: $borderColor;
-        transition: 120ms all ease-in;
+  }
+  &__thead {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    border-radius: $radius $radius 0 0;
+    background-color: $mainColor;
+    border: 1px $mainColor;
+    color: $inputColor;
+    font-weight: bold;
+    padding: 1rem;
+  }
+  &__tbody td {
+    background-color: $tbodyColor;
+    color: $darkFontColor;
+    padding: 1rem 2rem;
+  }
+  &__select {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: $inputColor;
+    border-radius: $radius;
+    border: 2px solid $borderColor;
+    color: $borderColor;
+    transition: 120ms all ease-in;
 
-        &:hover{
-            border-color: $mainColor;
-            color: $darkFontColor;
-            cursor: pointer;
-        }
+    &:hover {
+      border-color: $mainColor;
+      color: $darkFontColor;
+      cursor: pointer;
     }
-    &__output{
-        font-weight: 700;
-        font-size: 1.5rem;
-        color: $darkFontColor;
+  }
+  &__output {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $darkFontColor;
 
-        &:hover{
-            cursor: pointer;
+    &:hover {
+      cursor: pointer;
     }
-    }
-    &__lastTd{
-        border-radius: 0 0 1rem 1rem;
-    }
-    &__bottom{
-        display: flex;
-    }
-    &__input{
-        flex-grow: 2;
-        padding: 0.5rem;
-        background-color: $inputColor;
-        border-radius: 1rem 0 0 1rem;
-        border: 2px solid $borderColor;
-        border-right: transparent;
-        color: $darkFontColor;
-        transition: 120ms all ease-in;
-        margin: 0;
-        
-        &:hover{
-            border-color: $mainColor;
-        }
-    }
-    &__button{
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-        border-radius: 0 0.5rem 0.5rem 0;
-        background-color:$mainColor ;
-        border: solid 0px;
-        color:$inputColor;
-        transition: 250ms all ease-out;
+  }
+  &__lastTd {
+    border-radius: 0 0 $radius $radius;
+  }
+  &__bottom {
+    display: flex;
+  }
+  &__input {
+    flex-grow: 2;
+    padding: 0.5rem;
+    background-color: $inputColor;
+    border-radius: $radius 0 0 $radius;
+    border: 2px solid $borderColor;
+    border-right: transparent;
+    color: $darkFontColor;
+    transition: 120ms all ease-in;
+    margin: 0;
 
-        &:hover{
-            background-color: #a05559;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        &:active{
-            transform: scale(0.95); 
-        }
+    &:hover {
+      border-color: $mainColor;
     }
-    &__svg{
-        width: 1.5rem;
-        fill: $inputColor;
+  }
+  &__button {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 $radius $radius 0;
+    background-color: $mainColor;
+    border: solid 0px;
+    color: $inputColor;
+    transition: 250ms all ease-out;
+
+    &:hover {
+      background-color: #a05559;
+      font-weight: bold;
+      cursor: pointer;
     }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  &__svg {
+    width: 1.5rem;
+    fill: $inputColor;
+  }
 }
